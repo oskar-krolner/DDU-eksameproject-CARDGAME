@@ -1,0 +1,44 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://db65s6p8ji8t"]
+
+[ext_resource type="FontFile" uid="uid://olfkk43sabdg" path="res://pixel_rpg.ttf" id="1_60s8t"]
+[ext_resource type="StyleBox" uid="uid://dre2qm055yuqe" path="res://Scenes/CardUI/Card_Base_style_box_flat.tres" id="1_r2llq"]
+[ext_resource type="StyleBox" uid="uid://bvaw4nvjv1ek6" path="res://Scenes/CardUI/Card_Hover_style_box_flat.tres" id="2_s35tu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbl7s"]
+bg_color = Color(0, 0.6745098, 0.7607843, 0.4862745)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.25929382, 0.25929368, 0.25929353, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ceiq"]
+
+[resource]
+default_font = ExtResource("1_60s8t")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_disabled_color = Color(0, 0, 0, 1)
+Button/colors/icon_focus_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_normal_color = Color(0, 0, 0, 1)
+Button/colors/icon_pressed_color = Color(0, 0, 0, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 0
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("1_60s8t")
+Button/styles/disabled = SubResource("StyleBoxFlat_tbl7s")
+Button/styles/focus = SubResource("StyleBoxEmpty_0ceiq")
+Button/styles/hover = ExtResource("2_s35tu")
+Button/styles/normal = ExtResource("1_r2llq")
+Button/styles/pressed = ExtResource("2_s35tu")
+Panel/styles/panel = ExtResource("1_r2llq")
+PanelContainer/styles/panel = ExtResource("1_r2llq")
