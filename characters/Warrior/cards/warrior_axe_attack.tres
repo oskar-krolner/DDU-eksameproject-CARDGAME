@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://wxw1h24yff4v"]
+
+[ext_resource type="Texture2D" uid="uid://bk6ykwmxv1kcm" path="res://ART/Warrior Cards/Basic Strike.png.png" id="1_65wyu"]
+[ext_resource type="Script" uid="uid://8jld8hho5r5y" path="res://characters/Warrior/cards/warrior_axe_attack.gd" id="2_65wyu"]
+
+[resource]
+script = ExtResource("2_65wyu")
+target = 1
+cost = 1
+icon = ExtResource("1_65wyu")
+tooltip_text = "deal 6 damage"
+metadata/_custom_type_script = "uid://bbo8gshw6i7hq"

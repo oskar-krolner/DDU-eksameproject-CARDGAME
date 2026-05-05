@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7065uwfptgfw"]
+
+[ext_resource type="Script" uid="uid://bpfbcnh6cfq1q" path="res://Scenes/Enemy/enemy_action_picker.gd" id="1_ctsss"]
+[ext_resource type="Script" uid="uid://bmacnf5qhnie5" path="res://enemies/slimes/slime_attack_action.gd" id="2_irmtg"]
+[ext_resource type="Script" uid="uid://cn410b7rnrbo5" path="res://enemies/slimes/slime_block_action.gd" id="3_k81ev"]
+[ext_resource type="Script" uid="uid://pyro1e62lby" path="res://enemies/slimes/slime_mega_block_action.gd" id="4_wfvts"]
+
+[node name="SlimeEnemyAI" type="Node"]
+script = ExtResource("1_ctsss")
+
+[node name="AttackAction" type="Node" parent="."]
+script = ExtResource("2_irmtg")
+type = 1
+chance_weight = 1.0
+
+[node name="BlockAction" type="Node" parent="."]
+script = ExtResource("3_k81ev")
+type = 1
+chance_weight = 1.0
+
+[node name="MegaBlockAction" type="Node" parent="."]
+script = ExtResource("4_wfvts")

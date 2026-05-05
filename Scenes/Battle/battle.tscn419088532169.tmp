@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm2erws0ec5c2"]
+
+[ext_resource type="Texture2D" uid="uid://dgyhmqmjxqpk4" path="res://New Piskel-1.png (2).png" id="1_3qw02"]
+[ext_resource type="PackedScene" uid="uid://be81beq7es1yu" path="res://Scenes/CardUI/card_ui.tscn" id="2_aqr0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oxf17"]
+size = Vector2(1152, 399)
+
+[node name="Battle" type="Node2D"]
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.8346143, 0.8346143, 0.8346143, 1)
+position = Vector2(2.3841858e-07, 3.5527137e-15)
+scale = Vector2(4.6080003, 2.5919998)
+texture = ExtResource("1_3qw02")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="card drop area" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="card drop area"]
+position = Vector2(576, 200.5)
+shape = SubResource("RectangleShape2D_oxf17")
+
+[node name="battleUI" type="CanvasLayer" parent="." groups=["UI_Layer"]]
+
+[node name="Hand" type="HBoxContainer" parent="battleUI"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = -200.0
+offset_right = 500.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="CardUI" parent="battleUI/Hand" instance=ExtResource("2_aqr0y")]
+layout_mode = 2
+
+[node name="CardUI2" parent="battleUI/Hand" instance=ExtResource("2_aqr0y")]
+layout_mode = 2
+
+[node name="CardUI3" parent="battleUI/Hand" instance=ExtResource("2_aqr0y")]
+layout_mode = 2
